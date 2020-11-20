@@ -49,7 +49,15 @@ header {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid rgba(64, 87, 109, .07);
+  display: flex;
+  .logo{
+    width: 80px;
+    height: 40px;
+    background: #ccc;
+    display: inline-flex;
+  }
   ul {
+    display: inline-flex;
     li{
       .inner{
         padding: 0 10px;
