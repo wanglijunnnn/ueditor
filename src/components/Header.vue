@@ -50,6 +50,10 @@ header {
   background: #fff;
   border-bottom: 1px solid rgba(64, 87, 109, .07);
   display: flex;
+  padding: .8rem 0;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
   .logo{
     width: 80px;
     height: 40px;
