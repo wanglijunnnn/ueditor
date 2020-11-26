@@ -522,9 +522,7 @@
             style="background-image:url('https://profile.canva.cn/users/UAEHdSKtnxo/avatars/1/50.jpg')"
           ></div>
         </a>
-        <div class="e_popup e_head_popup" style="display:block">
-          
-        </div>
+        <div class="e_popup e_head_popup" style="display:block"></div>
       </div>
     </div>
   </header>
