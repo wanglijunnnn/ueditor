@@ -3,10 +3,15 @@
     padding: 0;
     font-size: 1.4rem;
     color: #0e1318;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
+}
+
+body {
+    background: #fff;
 }
 
 ul,
@@ -15,4 +20,112 @@ li {
     margin: 0;
     padding: 0;
     display: inline-block;
+}
+
+a,
+.e_button,
+.e_a_button {
+    cursor: pointer;
+}
+
+.e_left {
+    float: left;
+}
+
+.e_right {
+    float: right;
+}
+
+.e_flex {
+    display: flex;
+}
+
+.e_input {
+    height: 4rem;
+    width: 30rem;
+    border: none;
+    border-radius: .4rem;
+    box-shadow: 0 0 0 1px rgba(53, 71, 90, .2);
+}
+
+.e_input:focus {
+    outline: none;
+}
+
+.e_button {
+    width: auto;
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0 1rem;
+    border-radius: 4px;
+    background: #7d2ae8;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .4s;
+}
+
+.e_button:hover {
+    opacity: .9;
+}
+
+.e_a_button {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    transition: all .3s;
+}
+
+.e_a_button:hover {
+    background-color: rgba(57, 76, 96, .15);
+    transition: all .3s;
+}
+
+.e_a_head {
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    border-radius: 4rem;
+    overflow: hidden;
+    .img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.e_svg {
+    width: 2.6rem;
+    height: 2.6rem;
+    display: inline-block;
+    vertical-align: middle;
+    svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.e_popup {
+    position: absolute;
+    padding: 1.5rem;
+    line-height: 2rem;
+    box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+    filter: drop-shadow(0 9px 28px rgba(0, 0, 0, 0.05));
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #ececec;
+}
+
+.e_head_popup {
+    top: 46px;
+    right: 0;
+    width: 290px;
 }
