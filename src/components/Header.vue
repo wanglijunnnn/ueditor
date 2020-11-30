@@ -536,6 +536,10 @@ export default {
 
 <style lang="scss" scoped>
 header {
+  position: fixed;
+  z-index: 3;
+  grid-column: 1/3;
+  grid-row: 1/2;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid rgba(64, 87, 109, .07);
@@ -622,7 +626,7 @@ header {
               transition: all 0.4s;
             }
             a:hover {
-              background: rgba(117, 117, 117, 0.15);
+              background: rgba(64, 87, 109, 0.07);
             }
           }
         }
