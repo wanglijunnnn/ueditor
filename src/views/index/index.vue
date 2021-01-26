@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import ComHeader from "../../components/Header";
-import ComAside from "../../components/Aside";
-import ComMain from "../../components/Main";
+import ComHeader from "../../components/layout/Header";
+import ComAside from "../../components/layout/Aside";
+import ComMain from "../../components/layout/Main";
 export default {
-  name: "Index",
+  name: "uIndex",
   components: {
     ComHeader,
     ComAside,

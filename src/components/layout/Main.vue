@@ -6,7 +6,7 @@
           <div class="main_picture">
             <div class="picture_img">
               <img
-                src="https://inproductmarketing-static.canva.cn/featureBanners/20201127-DoubleTwelve_x2.jpg"
+                src="https://static.canva.cn/marketplace/banners/Templates%20-%20Personal%20Invites.jpg"
               />
             </div>
             <div class="picture_desc">
@@ -17,6 +17,10 @@
               </a>
             </div>
           </div>
+          <div class="main_recommend">
+            <com-swiper :swiperDatas="recommend" :swiperOptions="recommendOptions"></com-swiper>
+			<div v-drag>ssss</div>
+          </div>
         </div>
       </div>
     </div>
@@ -24,8 +28,70 @@
 </template>
 
 <script>
+import ComSwiper from "../../components/unit/Swiper";
 export default {
-
+	name: "uMain",
+	data() {
+		return {
+			recommend:[{
+						id: 1,
+						title: '滴滴滴1ssssssssssssssssss',
+						path: 'https://template.canva.cn/EADhYvKRPU4/1/0/400w-gczaZlMb5mE.jpg'
+					},
+					{
+						id: 2,
+						title: '滴滴滴2',
+						path: 'https://template.canva.cn/EADcCMrqPYM/1/0/400w-sYetbxMNEs8.jpg'
+					},
+					{
+						id: 3,
+						title: '滴滴滴3',
+						path: 'https://template.canva.cn/EADcCJb0B14/2/0/283w-gjTC4CeX6XM.jpg'
+					},
+					{
+						id: 4,
+						title: '滴滴滴4',
+						path: 'https://template.canva.cn/EADcCKMseXc/1/0/400w-1yAA367lNgU.jpg'
+					},
+					{
+						id: 5,
+						title: '滴滴滴5',
+						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
+					},
+					{
+						id: 5,
+						title: '滴滴滴5',
+						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
+					},
+					{
+						id: 5,
+						title: '滴滴滴5',
+						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
+					},
+					{
+						id: 5,
+						title: '滴滴滴5',
+						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
+					},
+					{
+						id: 5,
+						title: '滴滴滴5',
+						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
+					}
+			],
+			recommendOptions:{
+				
+			}
+		}
+	},
+	components:{
+	  ComSwiper
+	},
+	computed: {
+	},
+	mounted() {
+	
+	}
 }
 </script>
 
@@ -37,11 +103,11 @@ main {
   height: 1000px;
 }
 .main_container {
-  padding: 62px 0 0 0;
+  padding: 62px 30px 0 30px;
 }
 .main_picture {
   position: relative;
-  padding: 30px;
+  padding: 30px 0;
   .picture_img {
     width: 100%;
     height: 190px;
@@ -92,4 +158,6 @@ main {
     }
   }
 }
+
+
 </style>

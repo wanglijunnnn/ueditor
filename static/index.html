@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	
+		<svg width="500" height="75">
+			<circle cx="30" cy="30" r="25" style="stroke: none; fill: #0000ff;">
+				<animate attributeName="cx" attributeType="XML" from="30" to="470" begin="0s" dur="5s" fill="remove" repeatCount="indefinite"></animate>
+
+			</circle>
+		</svg>
+		
+		<svg id="svg" width="750" height="2000" xmlns="http://www.w3.org/2000/svg">
+		  <text font-family="microsoft yahei" font-size="40" x="0" y="0" fill="#cd0000">马
+		    <animateMotion path="M722.500,1.500 C722.500,1.500 880.500,402.500 463.500,390.500 C46.500,378.500 39.500,984.000 4.500,1022.500" begin="0s" dur="10s" rotate="auto" repeatCount="indefinite"/>
+		  </text>
+			
+		  <path d="M722.500,1.500 C722.500,1.500 880.500,402.500 463.500,390.500 C46.500,378.500 39.500,984.000 4.500,1022.500" stroke="#cd0000" stroke-width="1" fill="none" />
+		</svg>
+		<script type="application/javascript">
+			svg=document.getElementById('svg')
+			svg.onmouseover=function(){
+			   svg.pauseAnimations();
+			}
+			svg.onmouseleave=function(){
+			   svg.unpauseAnimations();
+			}
+			var animation = function(){
+				this.dur = '1s'
+				this.run = function(){
+					console.log('run')
+				}
+			}
+			var animate1 = new animation()
+			animation.prototype.name = null
+			animate1.name = 'toRight'
+			console.log(animate1)
+		</script>
+	</body>
+</html>
+{% comment %} 
+
+
+ {% endcomment %}

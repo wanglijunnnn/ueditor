@@ -169,6 +169,7 @@ aside{
           b {
             display: inline-flex;
             color: inherit;
+			font-size: 12px;
           }
         }
       }
