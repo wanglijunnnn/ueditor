@@ -12,14 +12,33 @@
             <div class="picture_desc">
               <h2>创建精彩设计</h2>
               <a>
-                <span>1212年末狂欢季，精选促销海报、传单、视频、banner模板</span>
-                <i><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.25" d="M5 8.83L7.12 6.7a1 1 0 0 0 0-1.42L5 3.17"></path></svg></i>
+                <span
+                  >1212年末狂欢季，精选促销海报、传单、视频、banner模板</span
+                >
+                <i
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="1.25"
+                      d="M5 8.83L7.12 6.7a1 1 0 0 0 0-1.42L5 3.17"
+                    ></path></svg
+                ></i>
               </a>
             </div>
           </div>
           <div class="main_recommend">
-            <com-swiper :swiperDatas="recommend" :swiperOptions="recommendOptions"></com-swiper>
-			<div v-drag>ssss</div>
+            <com-swiper
+              :swiperDatas="recommend"
+              :swiperOptions="recommendOptions"
+            ></com-swiper>
+            <div v-drag>ssss</div>
           </div>
         </div>
       </div>
@@ -30,76 +49,72 @@
 <script>
 import ComSwiper from "../../components/unit/Swiper";
 export default {
-	name: "uMain",
-	data() {
-		return {
-			recommend:[{
-						id: 1,
-						title: '滴滴滴1ssssssssssssssssss',
-						path: 'https://template.canva.cn/EADhYvKRPU4/1/0/400w-gczaZlMb5mE.jpg'
-					},
-					{
-						id: 2,
-						title: '滴滴滴2',
-						path: 'https://template.canva.cn/EADcCMrqPYM/1/0/400w-sYetbxMNEs8.jpg'
-					},
-					{
-						id: 3,
-						title: '滴滴滴3',
-						path: 'https://template.canva.cn/EADcCJb0B14/2/0/283w-gjTC4CeX6XM.jpg'
-					},
-					{
-						id: 4,
-						title: '滴滴滴4',
-						path: 'https://template.canva.cn/EADcCKMseXc/1/0/400w-1yAA367lNgU.jpg'
-					},
-					{
-						id: 5,
-						title: '滴滴滴5',
-						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
-					},
-					{
-						id: 5,
-						title: '滴滴滴5',
-						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
-					},
-					{
-						id: 5,
-						title: '滴滴滴5',
-						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
-					},
-					{
-						id: 5,
-						title: '滴滴滴5',
-						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
-					},
-					{
-						id: 5,
-						title: '滴滴滴5',
-						path: 'https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg'
-					}
-			],
-			recommendOptions:{
-				
-			}
-		}
-	},
-	components:{
-	  ComSwiper
-	},
-	computed: {
-	},
-	mounted() {
-	
-	}
-}
+  name: "uMain",
+  data() {
+    return {
+      recommend: [
+        {
+          id: 1,
+          title: "滴滴滴1ssssssssssssssssss",
+          path: "https://template.canva.cn/EADhYvKRPU4/1/0/400w-gczaZlMb5mE.jpg"
+        },
+        {
+          id: 2,
+          title: "滴滴滴2",
+          path: "https://template.canva.cn/EADcCMrqPYM/1/0/400w-sYetbxMNEs8.jpg"
+        },
+        {
+          id: 3,
+          title: "滴滴滴3",
+          path: "https://template.canva.cn/EADcCJb0B14/2/0/283w-gjTC4CeX6XM.jpg"
+        },
+        {
+          id: 4,
+          title: "滴滴滴4",
+          path: "https://template.canva.cn/EADcCKMseXc/1/0/400w-1yAA367lNgU.jpg"
+        },
+        {
+          id: 5,
+          title: "滴滴滴5",
+          path: "https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg"
+        },
+        {
+          id: 5,
+          title: "滴滴滴5",
+          path: "https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg"
+        },
+        {
+          id: 5,
+          title: "滴滴滴5",
+          path: "https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg"
+        },
+        {
+          id: 5,
+          title: "滴滴滴5",
+          path: "https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg"
+        },
+        {
+          id: 5,
+          title: "滴滴滴5",
+          path: "https://template.canva.cn/EADcCccB_YE/2/0/400w-RoZD7BTBTDk.jpg"
+        }
+      ],
+      recommendOptions: {}
+    };
+  },
+  components: {
+    ComSwiper
+  },
+  computed: {},
+  mounted() {}
+};
 </script>
 
 <style lang="scss" scoped>
 main {
   grid-column: 2/3;
   grid-row: 2/3;
-  background:#fff;
+  background: #fff;
   height: 1000px;
 }
 .main_container {
@@ -158,6 +173,4 @@ main {
     }
   }
 }
-
-
 </style>

@@ -1,5 +1,5 @@
 function greeter(preson:string) {
   return "Hello," + preson;
 }
-let user = [0,2];
+let user = "Jane User";
 document.body.innerHTML = greeter(user);
